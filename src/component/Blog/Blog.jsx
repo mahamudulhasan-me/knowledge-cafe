@@ -13,7 +13,7 @@ const Blog = (props) => {
     publish_date,
   } = props.blog;
   return (
-    <div className="border border-b-clr rounded-md p-3 mb-8">
+    <div className="border border-b-clr rounded-md p-3 mb-8 ">
       <img
         src={blog_cover_pic}
         alt=""
@@ -50,7 +50,9 @@ const Blog = (props) => {
         <Tag icon={<FontAwesomeIcon icon={faTag} />} title="Troubleshooting" />
         <Tag icon={<FontAwesomeIcon icon={faTag} />} title="IT" />
       </div>
-      <p className="underline cursor-pointer text-lg">Make as read.</p>
+      <p className="underline cursor-pointer text-lg text-[#6047EC]">
+        Make as read.
+      </p>
     </div>
   );
 };

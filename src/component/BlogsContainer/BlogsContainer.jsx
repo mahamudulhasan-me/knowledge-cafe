@@ -16,7 +16,7 @@ const BlogsContainer = () => {
           <Blog blog={blog} key={blog.id} />
         ))}
       </div>
-      <div className="col-span-4 sticky top-0">
+      <div className="col-span-4 ">
         <Bookmark />
       </div>
     </div>

@@ -1,5 +1,14 @@
 [
   {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "user_name": "Jessica Farrelly",
+    "user_profile_pic": "https://www.electric.ai/wp-content/uploads/2021/11/Jessica.png",
+    "blog_title": "Why Use a Managed Service Provider (MSP)?",
+    "blog_cover_pic": "https://www.electric.ai/wp-content/uploads/BLOG-Why-Use-a-Managed-Service-Provider-MSP.jpg",
+    "reading_time": 5,
+    "publish_date": "March 17, 2023"
+  },
+  {
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
     "user_name": "Team Electric",
     "user_profile_pic": "https://www.electric.ai/wp-content/uploads/2021/07/team-electric-avatar.png",
@@ -25,14 +34,5 @@
     "blog_cover_pic": "https://www.electric.ai/wp-content/uploads/Header_blog-1.png",
     "reading_time": 8,
     "publish_date": "March 22, 2023"
-  },
-  {
-    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
-    "user_name": "Jessica Farrelly",
-    "user_profile_pic": "https://www.electric.ai/wp-content/uploads/2021/11/Jessica.png",
-    "blog_title": "Why Use a Managed Service Provider (MSP)?",
-    "blog_cover_pic": "https://www.electric.ai/wp-content/uploads/BLOG-Why-Use-a-Managed-Service-Provider-MSP.jpg",
-    "reading_time": 5,
-    "publish_date": "March 17, 2023"
   }
 ]
