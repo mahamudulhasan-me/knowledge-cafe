@@ -50,7 +50,10 @@ const Blog = (props) => {
         <Tag icon={<FontAwesomeIcon icon={faTag} />} title="Troubleshooting" />
         <Tag icon={<FontAwesomeIcon icon={faTag} />} title="IT" />
       </div>
-      <p className="underline cursor-pointer text-lg text-[#6047EC]">
+      <p
+        className="underline cursor-pointer text-lg text-[#6047EC]"
+        onClick={() => props.readingTime(reading_time)}
+      >
         Make as read.
       </p>
     </div>
