@@ -1,3 +1,5 @@
+import { faBlog, faBookmark, faTag } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Tag from "../Tag/Tag";
 
@@ -11,7 +13,7 @@ const Blog = (props) => {
     publish_date,
   } = props.blog;
   return (
-    <div className="border border-b-clr rounded-md p-3">
+    <div className="border border-b-clr rounded-md p-3 mb-8">
       <img
         src={blog_cover_pic}
         alt=""
@@ -31,13 +33,24 @@ const Blog = (props) => {
             </div>
           </div>
 
-          <div>
-            <p>Read Time: {reading_time} Minutes</p>
+          <div className="flex  gap-3 items-center">
+            <p className="text-sm">{reading_time} Min. Read</p>
+
+            <div className="text-xl text-[#e2e8f0]">
+              <FontAwesomeIcon icon={faBookmark} />
+            </div>
           </div>
         </div>
       </div>
-      <h1 className="text-2xl">{blog_title}</h1>
-      <Tag />
+      <h1 className="text-2xl font-semibold">
+        <a href="">{blog_title}</a>
+      </h1>
+      <div className="flex gap-2 my-4">
+        <Tag icon={<FontAwesomeIcon icon={faBlog} />} title="Blog Post" />
+        <Tag icon={<FontAwesomeIcon icon={faTag} />} title="Troubleshooting" />
+        <Tag icon={<FontAwesomeIcon icon={faTag} />} title="IT" />
+      </div>
+      <p className="underline cursor-pointer text-lg">Make as read.</p>
     </div>
   );
 };

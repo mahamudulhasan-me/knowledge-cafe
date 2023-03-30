@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
+import Bookmark from "../Bookmark/Bookmark";
 
 const BlogsContainer = () => {
   const [blogs, setBlogs] = useState([]);
@@ -15,8 +16,8 @@ const BlogsContainer = () => {
           <Blog blog={blog} key={blog.id} />
         ))}
       </div>
-      <div className="col-span-4 border border-b-clr">
-        <h1>Bookmark</h1>
+      <div className="col-span-4 sticky top-0">
+        <Bookmark />
       </div>
     </div>
   );
