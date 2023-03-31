@@ -1,6 +1,7 @@
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import Accordion from "./component/Accordion/AccordionBody";
 import BlogsContainer from "./component/BlogsContainer/BlogsContainer";
 import Header from "./component/Header/Header";
 
@@ -9,9 +10,8 @@ function App() {
     <div className="App">
       <Header />
       <BlogsContainer />
-      <div className="border border-b-clr">
-        <ToastContainer theme="dark" />
-      </div>
+      <Accordion />
+      <ToastContainer theme="dark" />
     </div>
   );
 }
