@@ -36,7 +36,10 @@ const Blog = (props) => {
           <div className="flex  gap-3 items-center">
             <p className="text-sm">{reading_time} Min. Read</p>
 
-            <div className="text-xl text-[#e2e8f0]">
+            <div
+              className="text-xl text-[#e2e8f0] cursor-pointer"
+              onClick={() => props.bookmarked(blog_title)}
+            >
               <FontAwesomeIcon icon={faBookmark} />
             </div>
           </div>
