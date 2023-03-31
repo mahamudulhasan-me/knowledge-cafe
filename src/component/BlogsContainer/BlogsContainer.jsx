@@ -28,7 +28,7 @@ const BlogsContainer = () => {
       .then((blogs) => setBlogs(blogs));
   }, []);
   return (
-    <div className="px-[15%] grid grid-cols-12 gap-8 mt-10">
+    <div className="md:px-[15%] px-[5%] md:grid grid-cols-12 gap-8 mt-10">
       <div className="col-span-8 ">
         {blogs.map((blog) => (
           <Blog

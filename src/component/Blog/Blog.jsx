@@ -17,7 +17,7 @@ const Blog = (props) => {
       <img
         src={blog_cover_pic}
         alt=""
-        className="rounded-md h-[350px] w-full"
+        className="rounded-md md:h-[350px] w-full"
       />
       <div>
         <div className="flex justify-between my-5">
@@ -28,7 +28,7 @@ const Blog = (props) => {
               className="w-12 h-12 rounded-full"
             />
             <div>
-              <h3 className="text-xl">{user_name}</h3>
+              <h3 className="md:text-xl">{user_name}</h3>
               <p className="text-sm">{publish_date}</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Blog = (props) => {
           </div>
         </div>
       </div>
-      <h1 className="text-2xl font-semibold">
+      <h1 className="md:text-2xl text-xl md:font-semibold">
         <a href="">{blog_title}</a>
       </h1>
       <div className="flex gap-2 my-4">
