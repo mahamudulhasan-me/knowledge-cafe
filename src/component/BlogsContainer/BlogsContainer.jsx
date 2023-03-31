@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import Blog from "../Blog/Blog";
 import Bookmark from "../Bookmark/Bookmark";
 
@@ -14,7 +15,7 @@ const BlogsContainer = () => {
   const getBookmarkedItem = (blog) => {
     let alreadyMarked = bookmarked.find((item) => item === blog);
     if (alreadyMarked) {
-      alert("alreadyMarked");
+      toast("Already Bookmarked This Blog");
     } else {
       let bookmark = [...bookmarked, blog];
       setBookmarked(bookmark);
