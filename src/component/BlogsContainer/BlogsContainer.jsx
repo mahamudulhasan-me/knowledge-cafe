@@ -21,7 +21,6 @@ const BlogsContainer = () => {
       setBookmarked(bookmark);
     }
   };
-  console.log(bookmarked);
   useEffect(() => {
     fetch("data.json")
       .then((response) => response.json())

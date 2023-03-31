@@ -11,6 +11,7 @@ const Blog = (props) => {
     blog_cover_pic,
     reading_time,
     publish_date,
+    tags,
   } = props.blog;
   return (
     <div className="border border-b-clr rounded-md p-3 mb-8 ">
@@ -50,8 +51,13 @@ const Blog = (props) => {
       </h1>
       <div className="flex gap-2 my-4">
         <Tag icon={<FontAwesomeIcon icon={faBlog} />} title="Blog Post" />
-        <Tag icon={<FontAwesomeIcon icon={faTag} />} title="Troubleshooting" />
-        <Tag icon={<FontAwesomeIcon icon={faTag} />} title="IT" />
+        {tags.map((tag, index) => (
+          <Tag
+            icon={<FontAwesomeIcon icon={faTag} />}
+            title={tag}
+            key={index}
+          />
+        ))}
       </div>
       <p
         className="underline cursor-pointer text-lg text-[#6047EC]"
