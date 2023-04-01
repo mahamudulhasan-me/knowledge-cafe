@@ -12,11 +12,13 @@ const AccordionBody = () => {
           question={"How Does React work?"}
           answer={
             <p>
-              The difference comes in which component the data are owned. The
-              state is owned locally, and the component itself updates it. Props
-              are owned and read only by a parent. Props can be changed only if
-              an upstream shift is caused by a callback function passed on to
-              the child.
+              React is a JavaScript library for rendering the user interface.
+              React JS divides the user interface into reusable pieces called
+              components. <br /> React includes virtual DOM, which make a
+              website more interactive. When there is a change in our website,
+              instead of rendering the entire website, it compares the virtual
+              dom with what has changed and only renders the changed part and
+              shows it to the user.
             </p>
           }
         />
@@ -24,36 +26,45 @@ const AccordionBody = () => {
           question={"Difference between props vs state."}
           answer={
             <p>
-              The difference comes in which component the data are owned. The
-              state is owned locally, and the component itself updates it. Props
-              are owned and read only by a parent. Props can be changed only if
-              an upstream shift is caused by a callback function passed on to
-              the child.
+              Both props and state are used to manage data in React, but they
+              are used in different ways for different reasons. <br />
+              <strong className="underline">Properties(props):</strong> Props
+              are used to send data from the parent component to the child
+              component. Passing data cannot change child components, because
+              they are immutable Props can be used to pass any type of data,
+              including strings, numbers, objects, and functions. <br />
+              <strong className="underline">State:</strong> A state is an object
+              that executes asynchronously. It is used to keep track of data
+              that may change over time. When state is updated, React will
+              re-render the component and any child components that depend on
+              the changed state. State is mutable and can be changed by the
+              component itself.
             </p>
           }
         />
         <Accordion
           question={"How does useState work?"}
           answer={
-            <h1>
-              The difference comes in which component the data are owned. The
-              state is owned locally, and the component itself updates it. Props
-              are owned and read only by a parent. Props can be changed only if
-              an upstream shift is caused by a callback function passed on to
-              the child.
-            </h1>
+            <p>
+              In React's <strong>useState()</strong> is a hook, that is used to
+              manage state in functional components. It returns an array
+              containing two values, the current state and a function that will
+              change the state. When the state is updated using the update
+              function, React will automatically re-render the component with
+              the updated state.
+            </p>
           }
         />
         <Accordion
           question={"Purpose of useEffect other than fetching data."}
           answer={
-            <h1>
-              The difference comes in which component the data are owned. The
-              state is owned locally, and the component itself updates it. Props
-              are owned and read only by a parent. Props can be changed only if
-              an upstream shift is caused by a callback function passed on to
-              the child.
-            </h1>
+            <p>
+              <strong> useEffect()</strong> is usually used to fetch the data.
+              Besides, useEffect in react js allows performing side effects in
+              our components. The react useEffect examples of side effects
+              include reading from local storage, retrieving data, direct DOM
+              updates, and timers.
+            </p>
           }
         />
       </div>

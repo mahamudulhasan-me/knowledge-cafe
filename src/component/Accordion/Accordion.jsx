@@ -8,7 +8,7 @@ const Accordion = (props) => {
         <div className="collapse-title text-xl font-medium">
           {props.question}
         </div>
-        <div className="collapse-content border-t border-b-clr">
+        <div className="collapse-content border-t border-b-clr text-justify ">
           <p>{props.answer}</p>
         </div>
       </div>
