@@ -2,6 +2,7 @@ import React from "react";
 
 const Bookmark = (props) => {
   const bookmarkedItem = props.bookmarked;
+
   return (
     <div className="md:sticky md:top-5">
       <h2 className="border  text-[#6047EC] mb-10 border-b-clr text-center text-lg font-semibold rounded-md bg-[#13263D] py-4">

@@ -3,7 +3,7 @@ import Accordion from "./Accordion";
 
 const AccordionBody = () => {
   return (
-    <div className="border-t border-b-clr my-12 px-[15%] text-[#e2e8f0]">
+    <div className="border-t border-b-clr my-12 md:px-[15%] px-[5%] text-[#e2e8f0]">
       <h1 className="text-3xl py-2 border-b border-b-clr mb-10">
         Question Answer Phase
       </h1>

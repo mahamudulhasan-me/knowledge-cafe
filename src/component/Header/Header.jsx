@@ -6,7 +6,7 @@ const Header = () => {
       <h1 className="md:text-3xl text-xl font-medium">Knowledge Cafe</h1>
       <img
         className="w-12 h-12 ring  rounded-full"
-        src="https://www.electric.ai/wp-content/uploads/2021/11/Jessica.png"
+        src="https://shorten.world/gRVJa"
         alt=""
       />
     </div>

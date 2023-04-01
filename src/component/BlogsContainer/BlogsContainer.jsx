@@ -8,10 +8,12 @@ const BlogsContainer = () => {
   const [readingTime, setReadingTime] = useState(0);
   const [bookmarked, setBookmarked] = useState([]);
 
+  // this function get time from blog child
   const getReadingTime = (time) => {
     setReadingTime(readingTime + time);
   };
 
+  // this function get blog title from blog child
   const getBookmarkedItem = (blog) => {
     let alreadyMarked = bookmarked.find((item) => item === blog);
     if (alreadyMarked) {
@@ -21,11 +23,13 @@ const BlogsContainer = () => {
       setBookmarked(bookmark);
     }
   };
+  // fetching data from our local json/feck data
   useEffect(() => {
     fetch("data.json")
       .then((response) => response.json())
       .then((blogs) => setBlogs(blogs));
   }, []);
+
   return (
     <div className="md:px-[15%] px-[5%] md:grid grid-cols-12 gap-8 mt-10">
       <div className="col-span-8 ">
